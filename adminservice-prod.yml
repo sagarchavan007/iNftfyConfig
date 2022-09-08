@@ -16,8 +16,8 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth-server:9999/auth/realms/inftfy
-                    jwk-set-uri: http://auth-server:9999/auth/realms/inftfy/protocol/openid-connect/certs
+                    issuer-uri: http://auth-server:9191/realms/iNFTFy
+                    jwk-set-uri: http://auth-server:9191/realms/iNFTFy/protocol/openid-connect/certs
     datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
@@ -31,7 +31,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://localhost:9191
+            server-url: http://auth-server:9191
             realm: iNFTFy
             clientId: realm-management
-            client-secret: Cn1e1NvET1z5BOt9DvvBrwQOApiuF95t
+            client-secret: V7R6JThMmZsyMWOypID4IU1ozxyZVoLm
