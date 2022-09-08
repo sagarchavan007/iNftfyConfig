@@ -33,5 +33,5 @@ app:
         keycloak:
             server-url: http://${KCHOST}:${KCPORT}
             realm: ${KCREALM}
-            clientId: ${KCREALM}
+            clientId: ${KCCLIENT}
             client-secret: a8FoQVcv8OKCqvZd4fBF8xxZUh9WBkzK
