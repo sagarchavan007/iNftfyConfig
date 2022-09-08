@@ -5,9 +5,6 @@ eureka:
 logging:
     file:
         name: /tmp/studio-auth-gateway.log
-    logstash:
-        enabled: true
-        url: logstash:5000
 management:
     endpoint:
         health:
@@ -19,13 +16,9 @@ management:
             exposure:
                 include: health,info
 spring:
-    rabbitmq:
-        addresses: amqp://rabbitmq:5672/
     security:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth-server:9191/realms/iNFTFy
-                    jwk-set-uri: http://auth-server:9191/realms/iNFTFy/protocol/openid-connect/certs
-    zipkin:
-        base-url: http://zipkin:9411/
+                    issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
+                    jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
