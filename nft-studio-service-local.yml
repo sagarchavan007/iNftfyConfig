@@ -34,4 +34,4 @@ app:
             server-url: http://${KCHOST}:${KCPORT}
             realm: ${KCREALM}
             clientId: ${KCCLIENT}
-            client-secret: a8FoQVcv8OKCqvZd4fBF8xxZUh9WBkzK
+            client-secret: Ed7lbLueleOKm5lob0genakG3SGQ52gw
