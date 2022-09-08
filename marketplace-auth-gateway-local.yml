@@ -1,11 +1,9 @@
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
 spring:
     security:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://localhost:9101/auth/realms/iNFTFy
-                    jwk-set-uri: http://localhost:9101/auth/realms/iNFTFy/protocol/openid-connect/certs
+                    issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
+                    jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
+

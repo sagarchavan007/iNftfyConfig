@@ -1,7 +1,3 @@
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: ${EUREKA_URI:http://discovery:8761/eureka}
 logging:
     file:
         name: /tmp/nft-studio-service.log
@@ -20,8 +16,8 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth-server:9999/auth/realms/inftfy
-                    jwk-set-uri: http://auth-server:9999/auth/realms/inftfy/protocol/openid-connect/certs
+                    issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
+                    jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
     datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
@@ -35,7 +31,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://localhost:9191
-            realm: iNFTFy
-            clientId: realm-management
-            client-secret: Cn1e1NvET1z5BOt9DvvBrwQOApiuF95t
+            server-url: http://${KCHOST}:${KCPORT}
+            realm: ${KCREALM}
+            clientId: ${KCCLIENT}
+            client-secret: a8FoQVcv8OKCqvZd4fBF8xxZUh9WBkzK

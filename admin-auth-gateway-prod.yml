@@ -1,13 +1,6 @@
-eureka:
-    client:
-        serviceUrl:
-            defaultZone: ${EUREKA_URI:http://discovery:8761/eureka}
 logging:
     file:
-        name: /tmp/api-gateway.log
-    logstash:
-        enabled: true
-        url: logstash:5000
+        name: /tmp/admin-api-gateway.log
 management:
     endpoint:
         health:
@@ -19,13 +12,9 @@ management:
             exposure:
                 include: health,info
 spring:
-    rabbitmq:
-        addresses: amqp://rabbitmq:5672/
     security:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth-server-io/auth/realms/3cn
-                    jwk-set-uri: http://auth-server-io/auth/realms/3cn/protocol/openid-connect/certs
-    zipkin:
-        base-url: http://zipkin:9411/
+                    issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
+                    jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
