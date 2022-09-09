@@ -11,10 +11,3 @@ management:
         web:
             exposure:
                 include: health,info
-spring:
-    security:
-        oauth2:
-            resourceserver:
-                jwt:
-                    issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
-                    jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
