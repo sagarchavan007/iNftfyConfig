@@ -33,5 +33,5 @@ app:
         keycloak:
             server-url: http://auth-server:9191
             realm: iNFTFy
-            clientId: iNFTFySystemAdmin
-            client-secret: pcKBJkwCl0Cc8foD8MlsQ7QfZGdNbhhG
+            clientId: realm-management
+            client-secret: 6ZLSfhnkJE4pWSSkdG4pjvuQBU25zBrQ
