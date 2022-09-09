@@ -31,7 +31,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://${KCHOST}:${KCPORT}
-            realm: ${KCREALM}
-            clientId: ${KCCLIENT}
-            client-secret: Ed7lbLueleOKm5lob0genakG3SGQ52gw
+            server-url: http://auth-server:9191
+            realm: iNFTFy
+            clientId: iNFTFySystemAdmin
+            client-secret: pcKBJkwCl0Cc8foD8MlsQ7QfZGdNbhhG
