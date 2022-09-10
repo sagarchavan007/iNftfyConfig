@@ -1,6 +1,6 @@
 logging:
     file:
-        name: /tmp/adminservice.log
+        name: /tmp/apigateway.log
 management:
     endpoint:
         health:
