@@ -16,8 +16,8 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth.inftfytest.com/realms/iNFTFy
-                    jwk-set-uri: http://auth.inftfytest.com/realms/iNFTFy/protocol/openid-connect/certs
+                    issuer-uri: https://lemur-15.cloud-iam.com/auth/realms/infinity
+                    jwk-set-uri: https://lemur-15.cloud-iam.com/auth/realms/infinity/protocol/openid-connect/certs
     datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
@@ -25,13 +25,16 @@ spring:
     jpa:
         hibernate:
             ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
     jackson:
         serialization:
             fail-on-empty-beans: false
 app:
     config:
         keycloak:
-            server-url: http://auth.inftfytest.com
-            realm: iNFTFy
+            server-url: https://lemur-15.cloud-iam.com/auth
+            realm: infinity
             clientId: realm-management
-            client-secret: gjOXV6qYzFKewmVG3TFl9dCL0rjj8F1z
+            client-secret: zZD5mf2momTkFIalTEFOxWV6EggWzQ37
