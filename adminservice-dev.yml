@@ -36,7 +36,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: https://lemur-15.cloud-iam.com/auth/realms/infinity/protocol/openid-connect/auth
+            server-url: https://lemur-15.cloud-iam.com/auth/
             realm: infinity
             clientId: admin-cli
             client-secret: yTRtFtfHdtxcK5jP5sQPNFhXprb9rY6H
