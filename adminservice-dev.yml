@@ -36,7 +36,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: https://lemur-15.cloud-iam.com/auth
+            server-url: https://lemur-15.cloud-iam.com/auth/
             realm: infinity
-            clientId: realm-management
-            client-secret: Xwpzt6V04GmufhnDgISQKViUyLrSlO9v
+            clientId: adminclient
+            client-secret: gNZxcTxRRjno67RkrmIsj7l5bN0K6lCG
