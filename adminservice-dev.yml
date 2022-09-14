@@ -38,5 +38,5 @@ app:
         keycloak:
             server-url: https://lemur-15.cloud-iam.com/auth/
             realm: infinity
-            clientId: admin-cli
-            client-secret: yTRtFtfHdtxcK5jP5sQPNFhXprb9rY6H
+            clientId: adminclient
+            client-secret: gNZxcTxRRjno67RkrmIsj7l5bN0K6lCG
