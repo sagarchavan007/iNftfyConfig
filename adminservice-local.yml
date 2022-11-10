@@ -31,7 +31,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://${KCHOST}:${KCPORT}
+            server-url: https://auth.cognologix.in/
             realm: iNFTFy
-            clientId: realm-management
+            clientId: adminclient
             client-secret: NbvxMAPrVj0MOaXi8eLetvbv2FY7PjvF

@@ -31,7 +31,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://auth.inftfytest.com
+            server-url: http://${KCHOST}:${KCPORT}
             realm: iNFTFy
             clientId: realm-management
-            client-secret: gjOXV6qYzFKewmVG3TFl9dCL0rjj8F1z
+            client-secret: NbvxMAPrVj0MOaXi8eLetvbv2FY7PjvF
