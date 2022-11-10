@@ -35,3 +35,4 @@ app:
             realm: iNFTFy
             clientId: adminclient
             client-secret: CthnmP04Myvqgsi8adYpvbK8qQQ6sPqS
+            ssl-required: none
