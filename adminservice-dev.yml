@@ -37,7 +37,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: https://auth.cognologix.in/
-            realm: iNFTFy
+            server-url: https://lemur-17.cloud-iam.com/auth/
+            realm: inftfy
             clientId: adminclient
-            client-secret: CthnmP04Myvqgsi8adYpvbK8qQQ6sPqS
+            client-secret: Wi7FuYzDPHUEuMgvKup0KBkguQj6Zgeq
