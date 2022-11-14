@@ -12,12 +12,6 @@ management:
             exposure:
                 include: health,info
 spring:
-    security:
-        oauth2:
-            resourceserver:
-                jwt:
-                    issuer-uri: http://auth-server:9191/realms/iNFTFy
-                    jwk-set-uri: http://auth-server:9191/realms/iNFTFy/protocol/openid-connect/certs
     datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
@@ -28,10 +22,3 @@ spring:
     jackson:
         serialization:
             fail-on-empty-beans: false
-app:
-    config:
-        keycloak:
-            server-url: http://${KCHOST}:${KCPORT}
-            realm: iNFTFy
-            clientId: realm-management
-            client-secret: NbvxMAPrVj0MOaXi8eLetvbv2FY7PjvF

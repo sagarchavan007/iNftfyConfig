@@ -16,8 +16,9 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: https://auth.cognologix.in/realms/iNFTFy
-                    jwk-set-uri: https://auth.cognologix.in/realms/iNFTFy/protocol/openid-connect/certs
+                    issuer-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy
+                    jwk-set-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy/protocol/openid-connect/certs
+
     datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
