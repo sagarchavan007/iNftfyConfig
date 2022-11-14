@@ -16,23 +16,23 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: https://auth.cognologix.in/realms/iNFTFy
-                    jwk-set-uri: https://auth.cognologix.in/realms/iNFTFy/protocol/openid-connect/certs
-    datasource:
+                    issuer-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy
+                    jwk-set-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy/protocol/openid-connect/certs
+datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
         password: postgres
-    jpa:
-        hibernate:
-            ddl-auto: update
-    jackson:
-        serialization:
-            fail-on-empty-beans: false
+        jpa:
+            hibernate:
+                ddl-auto: update
+        jackson:
+            serialization:
+                fail-on-empty-beans: false
 app:
     config:
         keycloak:
-            server-url: https://auth.cognologix.in/
+            server-url: https://lemur-17.cloud-iam.com/auth/
             realm: iNFTFy
             clientId: adminclient
-            client-secret: CthnmP04Myvqgsi8adYpvbK8qQQ6sPqS
+            client-secret: Wi7FuYzDPHUEuMgvKup0KBkguQj6Zgeq
             ssl-required: none
