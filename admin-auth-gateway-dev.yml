@@ -2,6 +2,7 @@ eureka:
     client:
         serviceUrl:
             defaultZone: ${EUREKA_URI:http://discovery:8761/eureka}
+
 logging:
     file:
         name: /tmp/admin-auth-gateway.log
