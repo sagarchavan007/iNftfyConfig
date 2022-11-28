@@ -16,7 +16,7 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://35.200.208.111/auth/realms/iNFTFy
+                    issuer-uri: http://35.200.208.111/realms/iNFTFy
                     jwk-set-uri: http://35.200.208.111/realms/iNFTFy/protocol/openid-connect/certs
 
     datasource:
@@ -35,7 +35,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://35.200.208.111/realms/iNFTFy/protocol/openid-connect/auth
+            server-url: http://35.200.208.111/admin/master/console/ 
             realm: iNFTFy
             clientId: adminclient
             client-secret: umFR2VUrTsmEayGf7yImYaLREezgsaz2
