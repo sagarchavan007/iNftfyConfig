@@ -16,8 +16,8 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy
-                    jwk-set-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy/protocol/openid-connect/certs
+                    issuer-uri: http://35.200.208.111/auth/realms/inftfy
+                    jwk-set-uri: http://35.200.208.111/auth/realms/inftfy/protocol/openid-connect/certs
 datasource:
         url: jdbc:postgresql://localhost:5432/inftfy
         username: postgres
@@ -31,7 +31,7 @@ datasource:
 app:
     config:
         keycloak:
-            server-url: https://lemur-17.cloud-iam.com/auth/
+            server-url: http://35.200.208.111/auth/
             realm: iNFTFy
             clientId: adminclient
             client-secret: dwCbxaieLCrRGI0HoHwc6fQV4biTX9Cr

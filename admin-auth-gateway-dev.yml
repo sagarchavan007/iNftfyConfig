@@ -1,7 +1,7 @@
 eureka:
     client:
         serviceUrl:
-            defaultZone: ${EUREKA_URI:http://discovery:8761/eureka}
+            defaultZone: ${EUREKA_URI:http://discovery.default.svc.cluster.local:8761/eureka/}
 
 logging:
     file:
@@ -21,5 +21,5 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy
-                    jwk-set-uri: https://lemur-17.cloud-iam.com/auth/realms/inftfy/protocol/openid-connect/certs
+                    issuer-uri: http://35.200.208.111/auth/realms/iNFTFy
+                    jwk-set-uri: http://35.200.208.111/auth/realms/iNFTFy/protocol/openid-connect/certs
