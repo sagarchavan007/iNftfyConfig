@@ -35,7 +35,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: http://35.200.208.111/admin/master/console/ 
+            server-url: http://35.200.208.111/
             realm: iNFTFy
             clientId: adminclient
             client-secret: umFR2VUrTsmEayGf7yImYaLREezgsaz2
