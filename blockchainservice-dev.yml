@@ -27,8 +27,8 @@ spring:
     jackson:
         serialization:
             fail-on-empty-beans: false
- 
- wallet:
+            
+wallet:
   testnetrpcurl: https://rpc-mumbai.maticvigil.com/
   testnetpk: 7b0a7c69ac5994a016fdbae128e89558cc55206542711ec84860b7cd362d5d27
   testnettoken: 0xbcd480f7839fe5b1174125dc7cd5a891c2cadda3
