@@ -36,6 +36,6 @@ app:
     config:
         keycloak:
             server-url: http://35.200.208.111/
-            realm: iNftfy
+            realm: iNFTFy
             clientId: adminclient
             client-secret: umFR2VUrTsmEayGf7yImYaLREezgsaz2

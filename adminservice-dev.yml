@@ -37,7 +37,7 @@ spring:
 app:
     config:
         keycloak:
-            server-url: https://lemur-18.cloud-iam.com/auth/
+            server-url: http://35.200.208.111/
             realm: iNFTFy
             clientId: realm-management
-            client-secret: ooaNElIebOVY9KMX6ZrFTahCgy2APXN5
+            client-secret: umFR2VUrTsmEayGf7yImYaLREezgsaz2
