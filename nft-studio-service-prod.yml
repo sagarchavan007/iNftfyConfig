@@ -19,7 +19,7 @@ spring:
                     issuer-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}
                     jwk-set-uri: http://${KCHOST}:${KCPORT}/realms/${KCREALM}/protocol/openid-connect/certs
     datasource:
-        url: jdbc:postgresql://localhost:5432/inftfy
+        url: jdbc:postgresql://postgres.inftfy-core-backend.svc.cluster.local:5432/inftfy
         username: postgres
         password: postgres
     jpa:

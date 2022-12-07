@@ -16,10 +16,10 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://auth-server:9191/realms/iNFTFy
-                    jwk-set-uri: http://auth-server:9191/realms/iNFTFy/protocol/openid-connect/certs
+                    issuer-uri: http://auth-server:9191/realms/iNftfy
+                    jwk-set-uri: http://auth-server:9191/realms/iNftfy/protocol/openid-connect/certs
     datasource:
-        url: jdbc:postgresql://localhost:5432/inftfy
+        url: jdbc:postgresql://postgres.inftfy-core-backend.svc.cluster.local:5432/inftfy
         username: postgres
         password: postgres
     jpa:
