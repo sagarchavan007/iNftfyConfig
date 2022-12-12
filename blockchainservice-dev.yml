@@ -1,5 +1,5 @@
 wallet:
     testnetrpcurl: "https://rpc-mumbai.maticvigil.com/"
-    testnetpk: "7b0a7c69ac5994a016fdbae128e89558cc55206542711ec84860b7cd362d5d27"
-    testnettoken: "0xbcd480f7839fe5b1174125dc7cd5a891c2cadda3"
+    testnetpk: "f410a1334fff4ac96d1b707acb2ab852924d9e0067f9c5a920b6235d0aad9ec2"
+    testnettoken: "0x3d316b7B80568e2A94A7cE9cCdcf0eD5102F373C"
     testnetchainId: "80001"
