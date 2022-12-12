@@ -34,4 +34,4 @@ app:
             server-url: http://${KCHOST}:${KCPORT}
             realm: iNFTFy
             clientId: realm-management
-            client-secret: NbvxMAPrVj0MOaXi8eLetvbv2FY7PjvF
+            client-secret: qD5OpZLUzUKqqTjS5YJO6tIi2fixTvME 
