@@ -4,6 +4,6 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://35.200.208.111/realms/iNFTFy
-                    jwk-set-uri: http://35.200.208.111/realms/iNFTFy/protocol/openid-connect/certs
+                    issuer-uri: http://35.200.208.111/auth/realms/inftfy
+                    jwk-set-uri: http://35.200.208.111/auth/realms/inftfy/protocol/openid-connect/certs
 

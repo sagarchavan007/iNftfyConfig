@@ -1,6 +1,6 @@
 logging:
     file:
-        name: /tmp/adminservice.log
+        name: /tmp/marketplaceservice.log
 management:
     endpoint:
         health:
@@ -12,13 +12,6 @@ management:
             exposure:
                 include: health,info
 spring:
-    security:
-        oauth2:
-            resourceserver:
-                jwt:
-                    issuer-uri: http://35.200.208.111/realms/iNFTFy
-                    jwk-set-uri: http://35.200.208.111/realms/iNFTFy/protocol/openid-connect/certs
-
     datasource:
         url: jdbc:postgresql://postgres.default.svc.cluster.local:5432/inftfy
         username: postgres
@@ -34,10 +27,3 @@ spring:
     jackson:
         serialization:
             fail-on-empty-beans: false
-app:
-    config:
-        keycloak:
-            server-url: http://35.200.208.111/
-            realm: iNFTFy
-            clientId: adminclient
-            client-secret: umFR2VUrTsmEayGf7yImYaLREezgsaz2

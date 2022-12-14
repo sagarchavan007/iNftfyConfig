@@ -13,7 +13,7 @@ management:
                 include: health,info
 spring:
     datasource:
-        url: jdbc:postgresql://postgres.inftfy-core-backend.svc.cluster.local:5432/inftfy
+        url: jdbc:postgresql://postgres.default.svc.cluster.local:5432/inftfy
         username: postgres
         password: postgres
     jpa:
